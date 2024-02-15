@@ -19,9 +19,9 @@ else if (reqUrl == "/hello") {
     res.end();
 
 } else {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8')
+    res.setHeader('Content-Type', 'text/plain; charset=utf-8')
     res.writeHead(404);
-    res.write("Ei löydy 404 Not Found");
+    res.write("404 Not Found");
     res.end();
 }
 });
